@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" placeholder="0" disabled>
+        <div class="buttons">
+
+            <button class="btn" onclick="delet()">CE</button>
+            <button class="btn" onclick="pow()">x<sup>2</sup></button>
+            <button class="btn" onclick="openb()">(</button>
+            <button class="btn" onclick="closec()">)</button>
+            <button class="btn" onclick="percentage()">%</button>
+            <button class="btn" onclick ="Ac()">AC</button>
+            <button class="btn" onclick="sin0()">sin</button>
+            <button class="btn" onclick="pie()">π</button>
+            <button class="btn" onclick="number7()">7</button>
+            <button class="btn" onclick="number8()">8</button>
+            <button class="btn" onclick="number9()">9</button>
+            <button class="btn" id="uk" onclick="div()">÷</button>
+            <button class="btn" onclick="cos0()">cos</button>
+            <button class="btn" onclick="justify()">log</button>
+            <button class="btn" onclick="number4()">4</button>
+            <button class="btn" onclick="number5()">5</button>
+            <button class="btn" onclick="number6()">6</button>
+            <button class="btn" id="uk" onclick="multi()">×</button>
+                <button class="btn" onclick="tan0()">tan</button>
+                <button class="btn" onclick="sqrt()">root</button>
+                <button class="btn" onclick="number1()">1</button>
+                <button class="btn" onclick="number2()">2</button>
+                <button class="btn" onclick="number3()">3</button>
+                <button class="btn"  id="uk" onclick="sub()">-</button>
+                <button class="btn" onclick="expon()">exp</button>
+                <button class="btn" onclick="random()">ran</button>
+                <button class="btn"  onclick="zero()">0</button>
+                <button class="btn"id="dk" onclick="dot()">⋅</button>
+                <button class="btn" id="ck" onclick="equal()">=</button>
+                <button class="btn" id="uk" onclick="plus()">+</button>
+                
+           
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made by <span>❤</span> Harsh Yadav</p>
+    </footer>
+   
+     
+    <script>
+        const display = document.querySelector('#display');
+        function toggleBlink() {
+            display.classList.toggle('blink');
+        }
+    
+        setInterval (toggleBlink, 800);
+    </script>
+    
+</body>
+</html>
